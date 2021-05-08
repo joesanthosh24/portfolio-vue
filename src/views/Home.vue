@@ -26,7 +26,7 @@ img {
 }
 
 h1 {
-  display: inline-block;
+  /* display: inline-block; */
   letter-spacing: 0.75em;
   overflow: hidden;
   animation: appear 2s linear;
@@ -38,6 +38,12 @@ h1 {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  h1 {
+    letter-spacing: 0.35em;
   }
 }
 </style>

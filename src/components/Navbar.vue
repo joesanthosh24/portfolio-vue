@@ -71,7 +71,8 @@ header {
   transition: all 0.3s ease 0s;
 }
 
-.nav__link a:hover {
+.nav__link a:hover,
+.router-link-active {
   color: #5dcfad;
   padding-bottom: 10px;
   border-bottom: 4px solid #5dcfad;

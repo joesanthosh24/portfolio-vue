@@ -3,7 +3,7 @@
   <div class="projects">
     <project
       v-for="project of projects"
-      :key="project.name"
+      :key="project.id"
       :project="project"
     ></project>
   </div>
@@ -24,29 +24,58 @@ export default defineComponent({
   setup() {
     const projects = ref<Project[]>([
       {
+        id: 1,
         name: "Electronic Marketplace",
         description: "lorem ipsum",
         imageUrl: "/electronic-marketplace.jpeg",
+        githubUrl: "https://github.com/joesanthosh24/electronic-marketplace",
+        deploy: {
+          site: "Heroku",
+          url: "https://my-market-place-app-12.herokuapp.com/",
+        },
       },
       {
-        name: "Electronic Marketplac",
+        id: 2,
+        name: "Smart Brain App",
         description: "lorem ipsum",
         imageUrl: "/electronic-marketplace.jpeg",
+        deploy: {
+          site: "Heroku",
+          url: "https://face-recognition-smart-brain.herokuapp.com/",
+        },
       },
       {
-        name: "Electronic Marketpla",
+        id: 3,
+        name: "Duolingo Clone",
         description: "lorem ipsum",
         imageUrl: "/electronic-marketplace.jpeg",
+        githubUrl: "https://github.com/joesanthosh24/duolingo-clone",
+        deploy: {
+          site: "Netlify",
+          url: "https://duoling-clone.netlify.app/",
+        },
       },
       {
-        name: "Electronic Marketpl",
+        id: 4,
+        name: "Line Clone",
         description: "lorem ipsum",
         imageUrl: "/electronic-marketplace.jpeg",
+        githubUrl: "https://github.com/joesanthosh24/line-clone",
+        deploy: {
+          site: "Netlify",
+          url: "https://line-react-clone.netlify.app/",
+        },
       },
       {
-        name: "Electronic Marketp",
+        id: 5,
+        name: "Electronic Marketplace",
         description: "lorem ipsum",
         imageUrl: "/electronic-marketplace.jpeg",
+        githubUrl: "https://github.com/joesanthosh24/Anilist-clone",
+        deploy: {
+          site: "Netlify",
+          url: "https://anilist-clone.netlify.app/",
+        },
       },
     ]);
 

@@ -1,7 +1,5 @@
 <template>
-  <li>
-    <icon :link="link"></icon>
-  </li>
+  <a :href="link.url" target="_blank"><i :class="'fab fa-' + link.icon"></i></a>
 </template>
 
 <script lang="ts">
@@ -9,23 +7,30 @@ import { defineComponent, PropType } from "vue";
 
 import IconLink from "../types/IconLink";
 
-import Icon from "./Icon.vue";
-
 export default defineComponent({
+  name: "Icon",
   props: {
     link: {
       required: true,
       type: Object as PropType<IconLink>,
     },
   },
-  components: {
-    icon: Icon,
-  },
 });
 </script>
 
 <style scoped>
-li {
-  margin: 0 10px;
+a {
+  background-color: black;
+  text-decoration: none;
+  transition: color 0.4s ease;
 }
-</style>
+
+a i:hover {
+  color: #5dcfad;
+}
+
+i.fab {
+  color: white;
+  font-size: 1.3rem;
+}
+</style>e

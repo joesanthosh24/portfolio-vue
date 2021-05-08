@@ -19,4 +19,10 @@ export default defineComponent({
   color: #edf0f1;
   flex: 1;
 }
+
+@media screen and (max-width: 815px) {
+  .container {
+    margin-top: 50px;
+  }
+}
 </style>

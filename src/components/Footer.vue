@@ -5,7 +5,7 @@
       <ul class="socials-and-links">
         <footer-link
           v-for="link of links"
-          :key="link.icon"
+          :key="link.id"
           :link="link"
         ></footer-link>
       </ul>
@@ -19,27 +19,31 @@
 <script lang="ts">
 import { defineComponent, ref } from "vue";
 
-import FooterLink from "../types/FooterLink";
+import IconLink from "../types/IconLink";
 
-import FooterLinkComponent from "../components/FooterLink";
+import FooterLinkComponent from "../components/FooterLink.vue";
 
 export default defineComponent({
   name: "Footer",
   setup() {
-    const links = ref<FooterLink[]>([
+    const links = ref<IconLink[]>([
       {
+        id: 1,
         icon: "linkedin",
         url: "https://www.linkedin.com/in/joe-santhosh-183770123/",
       },
       {
+        id: 2,
         icon: "github-square",
         url: "https://github.com/joesanthosh24",
       },
       {
+        id: 3,
         icon: "instagram",
         url: "https://www.instagram.com/joesanthosh/",
       },
       {
+        id: 4,
         icon: "facebook-square",
         url: "https://www.facebook.com/joe.santhosh.9/",
       },
@@ -53,12 +57,13 @@ export default defineComponent({
 });
 </script>
 
-<style>
+<style scoped>
 .footer {
   background: black;
   padding-top: 40px;
   color: white;
   text-align: center;
+  width: 100vw;
 }
 
 .footer-content {
@@ -74,6 +79,15 @@ export default defineComponent({
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 2rem;
+}
+
+.socials-and-links {
+  background-color: black;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
 }
 
 .footer-bottom {
