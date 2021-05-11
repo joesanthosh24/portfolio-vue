@@ -25,6 +25,10 @@
           >
         </button>
       </div>
+      <div class="project__stack">
+        <p>Tech Stack:</p>
+        <frameworks :items="project.technologies"></frameworks>
+      </div>
     </div>
   </div>
 </template>
@@ -35,6 +39,7 @@ import { defineComponent, PropType } from "vue";
 import Project from "../types/Project";
 
 import Icon from "./Icon.vue";
+import Frameworks from "./Frameworks.vue";
 
 export default defineComponent({
   name: "Project",
@@ -46,6 +51,8 @@ export default defineComponent({
   },
   components: {
     icon: Icon,
+    frameworks: Frameworks,
+    Frameworks,
   },
   methods: {
     shorten() {
@@ -62,7 +69,6 @@ export default defineComponent({
 <style scoped>
 .project {
   width: 400px;
-  /* height: 400px; */
   margin: 50px;
   border: 1px solid #5dcfad;
   border-radius: 25px;
@@ -116,5 +122,18 @@ img:hover {
   width: 15px;
   margin-right: 10px;
   background-color: #5dcfad;
+}
+
+.project__stack {
+  margin-top: 10px;
+}
+
+.project__stack p {
+  margin-bottom: 10px;
+}
+
+.framework-img {
+  height: 30px;
+  width: 30px;
 }
 </style>

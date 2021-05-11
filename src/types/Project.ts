@@ -1,4 +1,5 @@
 import Deploy from "./Deploy";
+import FrameworkLogo from "./FrameworkLogo";
 
 export default interface Project {
   id?: number;
@@ -7,4 +8,5 @@ export default interface Project {
   imageUrl: string;
   githubUrl?: string;
   deploy?: Deploy;
+  technologies: FrameworkLogo[];
 }

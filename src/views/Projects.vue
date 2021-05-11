@@ -34,6 +34,14 @@ export default defineComponent({
           site: "heroku",
           url: "https://my-market-place-app-12.herokuapp.com/",
         },
+        technologies: [
+          { name: "Javascript", imageSource: "/javascript.svg" },
+          { name: "React", imageSource: "/react.svg" },
+          { name: "Redux", imageSource: "/redux.svg" },
+          { name: "Firebase", imageSource: "/firebase.svg" },
+          { name: "HTML5", imageSource: "/html5.svg" },
+          { name: "Sass", imageSource: "/sass.svg" },
+        ],
       },
       {
         id: 2,
@@ -45,6 +53,14 @@ export default defineComponent({
           site: "heroku",
           url: "https://face-recognition-smart-brain.herokuapp.com/",
         },
+        technologies: [
+          { name: "Javascript", imageSource: "/javascript.svg" },
+          { name: "React", imageSource: "/react.svg" },
+          { name: "Node", imageSource: "/nodejs.svg" },
+          { name: "PostgresQL", imageSource: "/postgresql.svg" },
+          { name: "HTML5", imageSource: "/html5.svg" },
+          { name: "CSS3", imageSource: "/css3.svg" },
+        ],
       },
       {
         id: 3,
@@ -57,18 +73,33 @@ export default defineComponent({
           site: "netlify",
           url: "https://duoling-clone.netlify.app/",
         },
+        technologies: [
+          { name: "Javascript", imageSource: "/javascript.svg" },
+          { name: "React", imageSource: "/react.svg" },
+          { name: "Firebase", imageSource: "/firebase.svg" },
+          { name: "Redux", imageSource: "/redux.svg" },
+          { name: "HTML5", imageSource: "/html5.svg" },
+          { name: "CSS3", imageSource: "/css3.svg" },
+        ],
       },
       {
         id: 4,
         name: "Line Clone",
         description:
-          "Clone of Japanese social media and phone service named Line. Built with React and Redux. Can change language of display text from dropdown on right of navbar. Responsive for different screen sizes",
+          "Clone of Japanese social media and phone service named Line. Can change language of display text from dropdown on right of navbar. Responsive for different screen sizes",
         imageUrl: "/line-clone.png",
         githubUrl: "https://github.com/joesanthosh24/line-clone",
         deploy: {
           site: "netlify",
           url: "https://line-react-clone.netlify.app/",
         },
+        technologies: [
+          { name: "Javascript", imageSource: "/javascript.svg" },
+          { name: "React", imageSource: "/react.svg" },
+          { name: "Redux", imageSource: "/redux.svg" },
+          { name: "HTML5", imageSource: "/html5.svg" },
+          { name: "CSS3", imageSource: "/css3.svg" },
+        ],
       },
       {
         id: 5,
@@ -80,6 +111,12 @@ export default defineComponent({
           site: "netlify",
           url: "https://anilist-clone.netlify.app/",
         },
+        technologies: [
+          { name: "Javascript", imageSource: "/javascript.svg" },
+          { name: "React", imageSource: "/react.svg" },
+          { name: "HTML5", imageSource: "/html5.svg" },
+          { name: "CSS3", imageSource: "/css3.svg" },
+        ],
       },
     ]);
 

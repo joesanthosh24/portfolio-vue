@@ -1,7 +1,9 @@
 <template>
-  <img src="../assets/logo.svg" alt="Logo" />
-  <div>
-    <h1>{{ name }}</h1>
+  <div class="home">
+    <img src="../assets/logo.svg" alt="Logo" />
+    <div>
+      <h1>{{ name }}</h1>
+    </div>
   </div>
 </template>
 
@@ -20,6 +22,10 @@ export default defineComponent({
 </script>
 
 <style scoped>
+.home {
+  margin-top: 170px;
+}
+
 img {
   height: 60px;
   width: 60px;
@@ -42,6 +48,9 @@ h1 {
 }
 
 @media screen and (max-width: 700px) {
+  .home {
+    margin-top: 70px;
+  }
   h1 {
     letter-spacing: 0.35em;
   }

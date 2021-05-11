@@ -15,7 +15,7 @@ export default defineComponent({
 <style scoped>
 .container {
   text-align: center;
-  margin-top: 200px;
+  margin-top: 20px;
   color: #edf0f1;
   flex: 1;
 }
