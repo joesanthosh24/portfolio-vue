@@ -26,11 +26,12 @@ export default defineComponent({
       {
         id: 1,
         name: "Electronic Marketplace",
-        description: "lorem ipsum",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti exercitationem a alias aut ab atque veritatis aperiam, corrupti labore minus? Error suscipit ea ipsam voluptatibus, facilis excepturi magni voluptate illo!",
         imageUrl: "/electronic-marketplace.jpeg",
         githubUrl: "https://github.com/joesanthosh24/electronic-marketplace",
         deploy: {
-          site: "Heroku",
+          site: "heroku",
           url: "https://my-market-place-app-12.herokuapp.com/",
         },
       },
@@ -40,7 +41,7 @@ export default defineComponent({
         description: "lorem ipsum",
         imageUrl: "/electronic-marketplace.jpeg",
         deploy: {
-          site: "Heroku",
+          site: "heroku",
           url: "https://face-recognition-smart-brain.herokuapp.com/",
         },
       },
@@ -51,7 +52,7 @@ export default defineComponent({
         imageUrl: "/electronic-marketplace.jpeg",
         githubUrl: "https://github.com/joesanthosh24/duolingo-clone",
         deploy: {
-          site: "Netlify",
+          site: "netlify",
           url: "https://duoling-clone.netlify.app/",
         },
       },
@@ -62,7 +63,7 @@ export default defineComponent({
         imageUrl: "/electronic-marketplace.jpeg",
         githubUrl: "https://github.com/joesanthosh24/line-clone",
         deploy: {
-          site: "Netlify",
+          site: "netlify",
           url: "https://line-react-clone.netlify.app/",
         },
       },
@@ -73,7 +74,7 @@ export default defineComponent({
         imageUrl: "/electronic-marketplace.jpeg",
         githubUrl: "https://github.com/joesanthosh24/Anilist-clone",
         deploy: {
-          site: "Netlify",
+          site: "netlify",
           url: "https://anilist-clone.netlify.app/",
         },
       },

@@ -3,19 +3,27 @@
     <img :src="'/images/' + project.imageUrl" />
     <h3>{{ project.name }}</h3>
     <div class="project__contents">
-      <p>{{ project.description }}</p>
+      <p>{{ shorten() }}</p>
       <div class="project__links">
-        <icon
-          v-if="project.githubUrl"
-          :link="{
-            icon: 'github-square',
-            url: project.githubUrl,
-          }"
-        ></icon>
+        <div class="project__iconContainer">
+          <icon
+            size="35px"
+            v-if="project.githubUrl"
+            :link="{
+              icon: 'github-square',
+              url: project.githubUrl,
+            }"
+          ></icon>
+        </div>
+        <button class="project__deploy" v-if="project.deploy">
+          <a
+            style="display: flex; align-items: center"
+            :href="project.deploy.url"
+            ><img :src="'/' + project.deploy.site + '-icon.svg'" />Link to
+            App</a
+          >
+        </button>
       </div>
-      <a v-if="project.deploy" :href="project.deploy.url" target="_blank"
-        >Link to App</a
-      >
     </div>
   </div>
 </template>
@@ -37,6 +45,15 @@ export default defineComponent({
   },
   components: {
     icon: Icon,
+  },
+  methods: {
+    shorten() {
+      const { description } = this.project;
+
+      return description.length > 120
+        ? description.substring(0, 120)
+        : description;
+    },
   },
 });
 </script>
@@ -65,8 +82,37 @@ img:hover {
 }
 
 .project__links {
-  margin-top: 10px;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.project__iconContainer {
+  margin-right: 20px;
+}
+
+.project__deploy {
+  border-radius: 10px;
+  width: 120px;
+  background-color: #5dcfad;
+  border: 1px solid #5dcfad;
+  padding: 5px;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.project__deploy a {
+  text-decoration: none;
+  color: white;
+  background-color: #5dcfad;
+}
+
+.project__deploy img {
+  height: 15px;
+  width: 15px;
+  margin-right: 10px;
+  background-color: #5dcfad;
 }
 </style>

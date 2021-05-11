@@ -1,5 +1,7 @@
 <template>
-  <a :href="link.url" target="_blank"><i :class="'fab fa-' + link.icon"></i></a>
+  <a :href="link.url" target="_blank"
+    ><i :style="{ fontSize: size }" :class="'fab fa-' + link.icon"></i
+  ></a>
 </template>
 
 <script lang="ts">
@@ -13,6 +15,9 @@ export default defineComponent({
     link: {
       required: true,
       type: Object as PropType<IconLink>,
+    },
+    size: {
+      type: Number,
     },
   },
 });

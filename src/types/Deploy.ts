@@ -1,4 +1,4 @@
 export default interface Deploy {
-  site: "Netlify" | "Heroku";
+  site: "netlify" | "heroku";
   url: string;
 }
