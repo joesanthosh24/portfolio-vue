@@ -93,7 +93,7 @@ header {
   }
 
   .nav__links {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
 }
 </style>

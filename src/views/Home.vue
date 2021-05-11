@@ -49,7 +49,9 @@ h1 {
 
 @media screen and (max-width: 700px) {
   .home {
-    margin-top: 70px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
   }
   h1 {
     letter-spacing: 0.35em;
