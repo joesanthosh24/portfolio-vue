@@ -27,7 +27,7 @@ export default defineComponent({
         id: 1,
         name: "Electronic Marketplace",
         description:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti exercitationem a alias aut ab atque veritatis aperiam, corrupti labore minus? Error suscipit ea ipsam voluptatibus, facilis excepturi magni voluptate illo!",
+          "E-Commerce App. React, Redux and Firebase. Users can sign up with email/google. User can add different products into their shopping cart and wishlist. Fake payment done via stripe API.",
         imageUrl: "/electronic-marketplace.jpeg",
         githubUrl: "https://github.com/joesanthosh24/electronic-marketplace",
         deploy: {
@@ -38,8 +38,9 @@ export default defineComponent({
       {
         id: 2,
         name: "Smart Brain App",
-        description: "lorem ipsum",
-        imageUrl: "/electronic-marketplace.jpeg",
+        description:
+          "Face detection app using clarifai API, React, Node, Postgres. Has user auth. User can add image url and a box is placed around the face part of image. Responsive design",
+        imageUrl: "/smart-brain.png",
         deploy: {
           site: "heroku",
           url: "https://face-recognition-smart-brain.herokuapp.com/",
@@ -48,8 +49,9 @@ export default defineComponent({
       {
         id: 3,
         name: "Duolingo Clone",
-        description: "lorem ipsum",
-        imageUrl: "/electronic-marketplace.jpeg",
+        description:
+          "Clone of Duolingo site. Built with React. User can add a language on sign up and can log in.",
+        imageUrl: "/duolingo-proj.png",
         githubUrl: "https://github.com/joesanthosh24/duolingo-clone",
         deploy: {
           site: "netlify",
@@ -59,8 +61,9 @@ export default defineComponent({
       {
         id: 4,
         name: "Line Clone",
-        description: "lorem ipsum",
-        imageUrl: "/electronic-marketplace.jpeg",
+        description:
+          "Clone of Japanese social media and phone service named Line. Built with React and Redux. Can change language of display text from dropdown on right of navbar. Responsive for different screen sizes",
+        imageUrl: "/line-clone.png",
         githubUrl: "https://github.com/joesanthosh24/line-clone",
         deploy: {
           site: "netlify",
@@ -69,9 +72,9 @@ export default defineComponent({
       },
       {
         id: 5,
-        name: "Electronic Marketplace",
-        description: "lorem ipsum",
-        imageUrl: "/electronic-marketplace.jpeg",
+        name: "Anilist Clone",
+        description: "Clone of Anilist website. Built with React",
+        imageUrl: "/anilist-clone.png",
         githubUrl: "https://github.com/joesanthosh24/Anilist-clone",
         deploy: {
           site: "netlify",

@@ -19,6 +19,7 @@
           <a
             style="display: flex; align-items: center"
             :href="project.deploy.url"
+            target="_blank"
             ><img :src="'/' + project.deploy.site + '-icon.svg'" />Link to
             App</a
           >
@@ -50,8 +51,8 @@ export default defineComponent({
     shorten() {
       const { description } = this.project;
 
-      return description.length > 120
-        ? description.substring(0, 120)
+      return description.length > 200
+        ? description.substring(0, 120) + "..."
         : description;
     },
   },
@@ -61,7 +62,7 @@ export default defineComponent({
 <style scoped>
 .project {
   width: 400px;
-  height: 400px;
+  /* height: 400px; */
   margin: 50px;
   border: 1px solid #5dcfad;
   border-radius: 25px;
@@ -79,6 +80,7 @@ img:hover {
 
 .project__contents {
   margin-top: 10px;
+  padding: 17px;
 }
 
 .project__links {
