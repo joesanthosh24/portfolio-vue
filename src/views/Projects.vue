@@ -118,6 +118,23 @@ export default defineComponent({
           { name: "CSS3", imageSource: "/css3.svg" },
         ],
       },
+      {
+        id: 6,
+        name: "Music Player App",
+        description:
+          "A music player that allows you to go to next song, previous song and pause and play the song. Built with HTML, CSS and Vanilla JavaScript",
+        imageUrl: "/music-player.png",
+        githubUrl: "https://github.com/joesanthosh24/music-player-proj",
+        deploy: {
+          site: "netlify",
+          url: "https://joes-music-player.netlify.app/",
+        },
+        technologies: [
+          { name: "Javascript", imageSource: "/javascript.svg" },
+          { name: "HTML5", imageSource: "/html5.svg" },
+          { name: "CSS3", imageSource: "/css3.svg" },
+        ],
+      },
     ]);
 
     return { projects };
