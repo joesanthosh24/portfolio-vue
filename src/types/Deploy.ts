@@ -1,4 +1,4 @@
 export default interface Deploy {
-  site: "netlify" | "heroku";
+  site: "netlify" | "heroku" | "firebase";
   url: string;
 }

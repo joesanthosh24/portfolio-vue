@@ -38,7 +38,7 @@ export default defineComponent({
           { name: "Javascript", imageSource: "/javascript.svg" },
           { name: "React", imageSource: "/react.svg" },
           { name: "Redux", imageSource: "/redux.svg" },
-          { name: "Firebase", imageSource: "/firebase.svg" },
+          { name: "Firebase", imageSource: "/firebase-icon.svg" },
           { name: "HTML5", imageSource: "/html5.svg" },
           { name: "Sass", imageSource: "/sass.svg" },
         ],
@@ -76,7 +76,27 @@ export default defineComponent({
         technologies: [
           { name: "Javascript", imageSource: "/javascript.svg" },
           { name: "React", imageSource: "/react.svg" },
-          { name: "Firebase", imageSource: "/firebase.svg" },
+          { name: "Firebase", imageSource: "/firebase-icon.svg" },
+          { name: "Redux", imageSource: "/redux.svg" },
+          { name: "HTML5", imageSource: "/html5.svg" },
+          { name: "CSS3", imageSource: "/css3.svg" },
+        ],
+      },
+      {
+        id: 7,
+        name: "Linkedin Clone",
+        description:
+          "Clone of Linkedin site. Built with React, Redux and Firebase. User can login/sign up with google. Add a post with an image or video.",
+        imageUrl: "/linkedin-clone.png",
+        githubUrl: "https://github.com/joesanthosh24/linkedin-clone",
+        deploy: {
+          site: "firebase",
+          url: "https://linkedin-clone-edb7f.web.app/",
+        },
+        technologies: [
+          { name: "JavaScript", imageSource: "/javascript.svg" },
+          { name: "React", imageSource: "/react.svg" },
+          { name: "Firebase", imageSource: "/firebase-icon.svg" },
           { name: "Redux", imageSource: "/redux.svg" },
           { name: "HTML5", imageSource: "/html5.svg" },
           { name: "CSS3", imageSource: "/css3.svg" },
