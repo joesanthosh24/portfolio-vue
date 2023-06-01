@@ -31,8 +31,8 @@ export default defineComponent({
         imageUrl: "/electronic-marketplace.jpeg",
         githubUrl: "https://github.com/joesanthosh24/electronic-marketplace",
         deploy: {
-          site: "heroku",
-          url: "https://my-market-place-app-12.herokuapp.com/",
+          site: "netlify",
+          url: "https://electronic-marketplace.netlify.app/",
         },
         technologies: [
           { name: "Javascript", imageSource: "/javascript.svg" },
