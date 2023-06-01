@@ -44,25 +44,6 @@ export default defineComponent({
         ],
       },
       {
-        id: 2,
-        name: "Smart Brain App",
-        description:
-          "Face detection app using clarifai API, React, Node, Postgres. Has user auth. User can add image url and a box is placed around the face part of image. Responsive design",
-        imageUrl: "/smart-brain.png",
-        deploy: {
-          site: "heroku",
-          url: "https://face-recognition-smart-brain.herokuapp.com/",
-        },
-        technologies: [
-          { name: "Javascript", imageSource: "/javascript.svg" },
-          { name: "React", imageSource: "/react.svg" },
-          { name: "Node", imageSource: "/nodejs.svg" },
-          { name: "PostgresQL", imageSource: "/postgresql.svg" },
-          { name: "HTML5", imageSource: "/html5.svg" },
-          { name: "CSS3", imageSource: "/css3.svg" },
-        ],
-      },
-      {
         id: 3,
         name: "Duolingo Clone",
         description:
