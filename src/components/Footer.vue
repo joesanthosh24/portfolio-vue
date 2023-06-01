@@ -40,7 +40,7 @@ export default defineComponent({
       {
         id: 3,
         icon: "instagram",
-        url: "https://www.instagram.com/joesanthosh/",
+        url: "https://www.instagram.com/joesanthosh96/",
       },
       {
         id: 4,
