@@ -37,16 +37,6 @@ export default defineComponent({
         icon: "github-square",
         url: "https://github.com/joesanthosh24",
       },
-      {
-        id: 3,
-        icon: "instagram",
-        url: "https://www.instagram.com/joesanthosh96/",
-      },
-      {
-        id: 4,
-        icon: "facebook-square",
-        url: "https://www.facebook.com/joe.santhosh.9/",
-      },
     ]);
 
     return { links };
